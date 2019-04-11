@@ -6,4 +6,4 @@
 .env
 
 # libs
-/vendor/
+/project/vendor/
