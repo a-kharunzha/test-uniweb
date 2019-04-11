@@ -1,0 +1,9 @@
+# phpstorm
+.idea
+
+
+# config
+.env
+
+# libs
+/vendor/
