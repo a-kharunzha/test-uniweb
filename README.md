@@ -1,12 +1,14 @@
 В БД хранятся данные (уникальный идентификатор, значение, версия). 
 
 Таблица имеет следующий вид: 
+```sql
 CREATE TABLE `data` ( 
 `ident` varchar(32) NOT NULL, 
 `value` varchar(255) NOT NULL, 
 `version` int(10) unsigned NOT NULL, 
 UNIQUE KEY `ident` (`ident`) 
 ) ENGINE=MyISAM DEFAULT CHARSET=cp1251 
+```
 
 На вход скрипта в GET приходит запрос в следующем формате: 
 ident[0]=<IDENT_0>&value[0]=<VALUE_0>&version[0]=<VERSION_0>&....&ident[N]=<IDENT_N>&value[N]=<VALUE_N>&version[N]=<VERSION_N> 

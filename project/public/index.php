@@ -36,6 +36,7 @@ foreach($_GET['ident'] as $index => $rowIdent){
     //2. update - список значений и версий по идентификаторам, где версия в БД стала больше чем версия пришедшая в запросе
     if($existingRow['version'] > $rowVersion){
         $output['update'][$rowIdent] = [
+            // тут не было указано, значения и версия должны быть из БД или из запроса, но по логике вещей, это запрос от слейва, так что значения нужно отдать из БД
             'value'=>$existingRow['value'],
             'version'=>$existingRow['version'],
         ];
@@ -53,6 +54,6 @@ foreach($existing as $existingRow){
 
 }
 
-//var_dump($output);
+//dump($output);
 // сериализованный так сериализованный
 echo serialize($output);
