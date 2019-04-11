@@ -1,8 +1,10 @@
 <?php declare(strict_types=1);
 
+header('Content-Type: text/html; charset=windows-1251');
+
 require_once realpath(__DIR__.'/../vendor/autoload.php');
 
-$dsn = sprintf('mysql:host=%s;dbname=%s',getenv('DATABASE_HOST'),getenv('DATABASE_NAME'));
+$dsn = sprintf('mysql:host=%s;dbname=%s;charset=cp1251;',getenv('DATABASE_HOST'),getenv('DATABASE_NAME'));
 $db = new PDO($dsn, getenv('DATABASE_USER'), getenv('DATABASE_PASS'));
 
 //
