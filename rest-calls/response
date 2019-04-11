@@ -1,0 +1,11 @@
+GET http://localhost:8101?ident%5B0%5D=11ca7c4b4f7c775017bd56c5e3341c07&value%5B0%5D=1&version%5B0%5D=1&ident%5B1%5D=c3f9b40539199f5fc491a6c3b73ad702&value%5B1%5D=1&version%5B1%5D=1&ident%5B2%5D=1111b40539199f5fc491a6c3b73ad702&value%5B2%5D=1&version%5B2%5D=3
+
+HTTP/1.1 200 OK
+Server: nginx/1.15.10
+Date: Thu, 11 Apr 2019 16:45:43 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/7.3.3
+
+a:3:{s:6:"delete";a:1:{i:0;s:32:"1111b40539199f5fc491a6c3b73ad702";}s:6:"update";a:1:{s:32:"c3f9b40539199f5fc491a6c3b73ad702";a:2:{s:5:"value";s:1:"2";s:7:"version";s:1:"2";}}s:3:"new";a:2:{s:32:"a8fcbe77aa628beb393478bae272ff5e";a:2:{s:5:"value";s:1:"4";s:7:"version";s:1:"5";}s:32:"af38fbe961646d65313a20c91b8642f8";a:2:{s:5:"value";s:1:"9";s:7:"version";s:1:"3";}}}

@@ -3,7 +3,7 @@
 require_once realpath(__DIR__.'/../vendor/autoload.php');
 
 $dsn = sprintf('mysql:host=%s;dbname=%s',getenv('DATABASE_HOST'),getenv('DATABASE_NAME'));
-$db = new PDO('mysql:host=db;dbname=test-uniweb', getenv('DATABASE_USER'), getenv('DATABASE_PASS'));
+$db = new PDO($dsn, getenv('DATABASE_USER'), getenv('DATABASE_PASS'));
 
 //
 //var_dump($_GET);
